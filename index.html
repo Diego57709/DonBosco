@@ -30,6 +30,15 @@
       background-color: #0275d8;
       border-radius: 2px;
     }
+    .card-img-top {
+      height: 200px; /* Ajusta el tamaño de altura */
+      object-fit: cover; /* Ajusta cómo se recortan las imágenes */
+  }
+  @media (max-width: 576px) {
+    .card-img-top {
+        height: 150px; /* Tamaño más pequeño en móviles */
+    }
+}
   </style>
 </head>
 <body>
@@ -182,7 +191,7 @@
         <div class="col">
           <div class="card h-100">
             <img 
-              src="" 
+              src="img/chess.webp" 
               class="card-img-top" 
               alt="Chess"
             >
@@ -194,7 +203,7 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="#" class="btn btn-success">Más detalles</a>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPresencial">Más detalles</button>
             </div>
           </div>
         </div>
@@ -202,7 +211,7 @@
         <div class="col">
           <div class="card h-100">
             <img 
-              src="" 
+              src="img/showdown.avif" 
               class="card-img-top" 
               alt="Pokémon Showdown"
             >
@@ -214,7 +223,7 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="#" class="btn btn-success">Más detalles</a>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPresencial">Más detalles</button>
             </div>
           </div>
         </div>
@@ -222,7 +231,7 @@
         <div class="col">
           <div class="card h-100">
             <img 
-              src="" 
+              src="img/tcg.webp" 
               class="card-img-top" 
               alt="Pokémon TCG"
             >
@@ -234,7 +243,7 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="#" class="btn btn-success">Más detalles</a>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPresencial">Más detalles</button>
             </div>
           </div>
         </div>
@@ -242,7 +251,7 @@
         <div class="col">
           <div class="card h-100">
             <img 
-              src="" 
+              src="img/brawl.webp" 
               class="card-img-top" 
               alt="Brawl Stars"
             >
@@ -254,7 +263,7 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="#" class="btn btn-success">Más detalles</a>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPresencial">Más detalles</button>
             </div>
           </div>
         </div>
@@ -262,7 +271,7 @@
         <div class="col">
           <div class="card h-100">
             <img 
-              src="" 
+              src="img/cr.jpg" 
               class="card-img-top" 
               alt="Clash Royale"
             >
@@ -274,12 +283,31 @@
               </p>
             </div>
             <div class="card-footer text-center">
-              <a href="#" class="btn btn-success">Más detalles</a>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPresencial">Más detalles</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalPresencial" tabindex="-1" aria-labelledby="modalPresencial" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalOnlineLabel">Información</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Se hará de manera presencial de 11:00-14:00 el dia 31 de enero.</p>
+                  <p>Se tendrá que registrar mediante el <a href="https://docs.google.com/forms/d/1CbLf2zqqbjefK8qt6yBa96a4nDVyLc3H8uR9UCuZJG8/edit">formulario</a>.</p>
+                  <p><a href="https://discord.gg/fxHGWsyZ">Servidor de discord</a></p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
   </section>
 
   <!-- Pie de página -->
