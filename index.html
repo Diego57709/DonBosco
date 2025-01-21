@@ -9,7 +9,6 @@
     rel="stylesheet"
   >
   <style>
-    /* Estilos adicionales (opcional) */
     .hero {
       background: #f5f5f5;
       padding: 5rem 0;
@@ -17,11 +16,9 @@
     }
     .hero h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
     }
     .hero p {
       font-size: 1.3rem;
-      color: #555;
     }
     .divider {
       height: 3px;
@@ -31,14 +28,33 @@
       border-radius: 2px;
     }
     .card-img-top {
-      height: 200px; /* Ajusta el tamaño de altura */
-      object-fit: cover; /* Ajusta cómo se recortan las imágenes */
-  }
-  @media (max-width: 576px) {
-    .card-img-top {
-        height: 150px; /* Tamaño más pequeño en móviles */
+      height: 200px;
+      object-fit: cover;
     }
-}
+    @media (max-width: 576px) {
+      .hero {
+        padding: 2rem 1rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .card-body h5 {
+        font-size: 1rem;
+      }
+      .card-body p {
+        font-size: 0.9rem;
+      }
+      footer p {
+        font-size: 0.8rem;
+      }
+      .card-img-top {
+        height: auto;
+        max-height: 150px;
+      }
+    }
   </style>
 </head>
 <body>
